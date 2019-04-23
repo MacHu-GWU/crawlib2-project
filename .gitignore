@@ -92,6 +92,9 @@ venv/
 ENV/
 
 
+# serverless
+.serverless/
+
 
 # Spyder project settings
 .spyderproject

@@ -24,3 +24,20 @@ supported_py_versions="3.6.2" # e.g: "2.7.13 3.6.2"
 rtd_project_name="crawlib2"
 
 
+#--- AWS Lambda
+# AWS profile name for deploy lambda function
+# should be defined in ~/.aws/credentials
+# read https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html for more information
+aws_profile_for_lambda="sanhe"
+
+# deployment package file will be upload to:
+# "s3://${s3_bucket_lambda_deploy}/lambda/${github_account}/${github_repo_name}/${package_name}-${package_version}.zip"
+s3_bucket_lambda_deploy="a-s3-bucket-name"
+
+
+# Docker
+# deployment package will be built in this container
+docker_image_for_build="lambci/lambda:build-python3.6"
+# this container will be used for testing lambda invoke
+docker_image_for_run="lambci/lambda:python3.6"
+dir_container_workspace="/var/task"
