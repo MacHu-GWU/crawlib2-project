@@ -2,6 +2,7 @@
 crawlib2_venv/
 crawlib2.egg-info/
 crawlib2-*/
+playground/
 
 
 # Byte-compiled / optimized / DLL files

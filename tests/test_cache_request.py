@@ -18,7 +18,7 @@ class TestCachedRequest(object):
         url = "https://www.python.org/about/"
         # https://www.python.org doesn't hit cache! should appear every 10 seconds
         html = spider.request_for_html(url, cache_expire=10)
-        
+
 
 if __name__ == "__main__":
     import os

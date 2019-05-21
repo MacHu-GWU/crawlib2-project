@@ -1,2 +1,19 @@
 pathlib_mate    # autopep8 your code
 twine>=1.5.0    # make distribution archive
+
+# AWS
+boto3           # AWS Python SDK
+flask
+
+# requests
+requests
+grequests
+requests-futures
+aiohttp
+
+# parse html
+bs4
+requests_html
+
+# scrapy framework
+scrapy
